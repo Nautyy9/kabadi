@@ -30,7 +30,7 @@ return () => {unmount = true;}
 
   if(loading) {
     return (
-      <div className={` ${theme ? "bg-sun-light": "bg-sun-dark"}  flex flex-col gap-y-20 h-screen items-center justify-center`}>
+      <div className={` ${theme ? "bg-white": "bg-black"}  flex flex-col gap-y-20 h-screen items-center justify-center`}>
       <SyncLoader
         size={20}
         color="#36d7b7"
