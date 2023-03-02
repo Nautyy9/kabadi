@@ -52,7 +52,7 @@ function Footer() {
               <div className="flex  gap-y-4 lg:gap-x-4">
                 <a href="/">
                   <div className="flex gap-x-2">
-                  <img src="../../public/images/logo.svg" className='h-10 w-10' alt="KabadiLogo" />
+                  <img src="images/logo.svg" className='h-10 w-10' alt="KabadiLogo" />
                   <p className='text-center m-auto text-2xl font-bold border-b-4 pb-0.5 border-green-exact text-green-exact'>KABADI</p> 
                   </div>
                 </a>
@@ -111,7 +111,7 @@ function Footer() {
               <div className="flex flex-col gap-y-4 lg:gap-x-8">
                 <a href="/">
                   <div className="flex gap-x-2">
-                  <img src="../../public/images/logo.svg" className='h-10 w-10' alt="KabadiLogo" />
+                  <img src="images/logo.svg" className='h-10 w-10' alt="KabadiLogo" />
                   <p className='text-center m-auto text-2xl font-bold border-b-4 pb-0.5 border-green-exact text-green-exact'>KABADI</p> 
                   </div>
                 </a>

@@ -12,9 +12,9 @@ const dataArr =[
 ]
 
 const dataArr2 =[
-  {img:'../../public/images/About Us _ Waste Management Company - The Kabadiwala-1.svg', head: "Transparency", text:"Our App enables users to access the impact marked through the waste sold and recycled in terms of resources and energy saved."},
-  {img:'../../public/images/About Us _ Waste Management Company - The Kabadiwala-2.svg', head: "Traceability", text:"Our 4 different apps for users, pickup executives, city managers & MRF centers are helping us organize the unorganized waste sector in terms of keeping a track record of waste sold, segregated, bailed, transported, and recycled."}, 
-  {img:'../../public/images/About Us _ Waste Management Company - The Kabadiwala-3.svg', head: "Scalability", text:"Our 4 different apps for users, pickup executives, city managers & MRF centers are helping us organize the unorganized waste sector in terms of keeping a track record of waste sold, segregated, bailed, transported, and recycled."} 
+  {img:'images/About Us _ Waste Management Company - The Kabadiwala-1.svg', head: "Transparency", text:"Our App enables users to access the impact marked through the waste sold and recycled in terms of resources and energy saved."},
+  {img:'images/About Us _ Waste Management Company - The Kabadiwala-2.svg', head: "Traceability", text:"Our 4 different apps for users, pickup executives, city managers & MRF centers are helping us organize the unorganized waste sector in terms of keeping a track record of waste sold, segregated, bailed, transported, and recycled."}, 
+  {img:'images/About Us _ Waste Management Company - The Kabadiwala-3.svg', head: "Scalability", text:"Our 4 different apps for users, pickup executives, city managers & MRF centers are helping us organize the unorganized waste sector in terms of keeping a track record of waste sold, segregated, bailed, transported, and recycled."} 
 ]
 
 
@@ -45,7 +45,7 @@ return () => {unmount = true;}
     )
   }
   return (
-    <div className={theme? ' bg-sun-light text-sun-light' : 'text-sun-dark dark-one bg-sun-darkmode'}>
+    <div className={theme? ' bg-sun-light text-black' : 'text-white dark-one bg-sun-darkmode'}>
       <div className="relative h-max flex flex-col">
 
       <Header/>
