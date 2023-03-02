@@ -5,7 +5,6 @@ import { Props } from '../../@types/main'
 import { AuthContext } from '../context/AuthContext'
 function Footer() {
   const params = useParams();
-  console.log(params);
 
   const contactMatch = useMatch('/contactus')
   const serviceMatch = useMatch(`/services/${params.id}` );

@@ -14,33 +14,7 @@ function Services() {
   const [loading, setLoading] =useState<boolean>(false);
   const params = useParams();
   const param = params.id;
-  
-  useEffect(() => {
-    let unmount = false
-
-    if(!unmount){
-      setLoading(true);
-      setTimeout(() =>{
-      setLoading(false)
-  },2000)
-    }
-    return () => {unmount = true;} 
-  }, [param])
-
-
 const {theme} = useContext(AuthContext) as Props
-
-  if(loading) {
-    return (
-       <div className={`${theme? 'bg-sun-light' : 'bg-sun-dark'} bg-sun-dark flex flex-col gap-y-20 h-screen items-center justify-center`} >
-      <SyncLoader
-        size={20}
-        color="#36d7b7"
-      />
-      </div>
-    )
-  }
-  else {
   return (
     <div className={theme? ' bg-sun-light text-sun-light' : 'text-sun-dark dark-one bg-sun-darkmode'}>
         <Header/>
@@ -142,5 +116,5 @@ const {theme} = useContext(AuthContext) as Props
     </div>
   )
 }
-}
+
 export default Services

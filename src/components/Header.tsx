@@ -66,7 +66,7 @@ function Header() {
     
     
     return (
-      <div className={` ${( serviceMatch ||terms || privacy)&& (theme ?"bg-sun-light -gap-20 text-black shadow-xl " : "bg-black text-sun-light ")} top-0 lg:hidden shadow-md fixed  sm:h-60  gap-y-6 w-screen z-10 grid grid-flow-row   bg-sun-light text-sun-dark`} >
+      <div className={` ${( serviceMatch ||terms || privacy)&& (theme ?"bg-sun-light -gap-20 text-black shadow-xl " : "bg-black text-white ")} top-0 lg:hidden shadow-md fixed  sm:h-60  gap-y-6 w-screen z-10 grid grid-flow-row   bg-sun-light text-sun-dark`} >
         <div className=" grid grid-flow-col  justify-between   mt-8 ">
         <Link to='/'><img src={logo} className='  h-14 mt-1   rounded-full' alt='Kabadi Logo'/></Link>
           <Dropdown3 show={show} setShow={setShow}/>   

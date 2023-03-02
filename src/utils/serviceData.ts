@@ -285,30 +285,30 @@ export const data =  [
         "id":  4,
         "check": "vehicle-scrapping",
         "heading" : "Vehicle Scrapping Service",
-        "img" : "../../public/images/vehicle-scrapping-hero.webp",
+        "img" : "/images/vehicle-scrapping-hero.webp",
         "text1": "Older vehicles pose a huge risk to road safety, have higher fuel consumption & contribute to the environment pollution immensely. In line with the sustainable economic development vision of hon. Prime Minister Narendra Modi, Govt. of India announced the Voluntarily Vehicle Fleet Modernization Program (VVMP) popularly known as Vehicle Scrappage Policy of 2021, it presents a win-win situation for all stakeholders, be it the vehicle owners, pedestrians, automotive industries or the Government.As per the policy, vehicles as old as 10 to 15 years or those who have to be applied for re-registration would be declared as end of life or unfit to be on roads if failed the automated fitness test by the authority. Such vehicles have to be considered for voluntary scrapping by the owners. This is the point where The Kabadiwala’s vehicle scrapping service comes into picture. On depositing the vehicle for scrapping with us, the vehicle owner first of all gets the fair scrap value and a tradable certificate of deposit which can be used to avail multiple benefits such as registration fee waiver, road tax concession and auto OEM discounts on purchase of new vehicle.The kabadiwala with its vehicle scrapping service contributes in formalising the informal sector, and promotes safe & eco-friendly disposal of vehicle scraps after the proper dismantling of the vehicles. This results in the increased availability of low cost materials for automotive, steel & electronics industries by exercising reuse & recycling, and reduced waste going to the landfills. Apart from that, jobs are also created in the currently regarded informal sector as well as in the automotive industries due to increased automotive sales by continuous scrapping of old vehicles. Hence a circular economy will be achieved helping India to become Atma Nirbhar.",
         "text2-head" : "What We Do?",
         "text2": [
-            {   "img": "../../public/images/Authorized Vehicle Scrapping Service - The Kabadiwala-1.svg",
+            {   "img": "/images/Authorized Vehicle Scrapping Service - The Kabadiwala-1.svg",
                 "head" :"Dismantling",
                 "text": "Once the vehicle reaches The Kabadiwala facility,our trained team starts with the manual dismantling process."
             },
             {   
-                "img": "../../public/images/Authorized Vehicle Scrapping Service - The Kabadiwala-2.svg",
+                "img": "/images/Authorized Vehicle Scrapping Service - The Kabadiwala-2.svg",
                 "head":"Segregation",
                 "text":" The recyclables are separated from the non-recyclable materials. Once the vehicle reaches The Kabadiwala facility,our trained team starts with the manual dismantling process."},
             {
-                "img": "../../public/images/Authorized Vehicle Scrapping Service - The Kabadiwala-3.svg",
+                "img": "/images/Authorized Vehicle Scrapping Service - The Kabadiwala-3.svg",
                 "head": "Recycling",
                 "text":" The recyclables are sent to the authorised recyclers for recycling."
             },
             {
-                "img":"../../public/images/Authorized Vehicle Scrapping Service - The Kabadiwala-4.svg",
+                "img":"/images/Authorized Vehicle Scrapping Service - The Kabadiwala-4.svg",
                 "head": "Disposal",
                 "text":" The non-recyclables are disposed of in the most sustainable manner."
             },
             {
-                "img": "../../public/images/Authorized Vehicle Scrapping Service - The Kabadiwala-5.svg",
+                "img": "/images/Authorized Vehicle Scrapping Service - The Kabadiwala-5.svg",
                 "head": "Certification",
                 "text":"An EPR certificate is issued along with a proof of document delivery challans, invoices and photos acknowledging the amount of plastic waste offset by you."
             }
@@ -317,38 +317,38 @@ export const data =  [
         "text3-head": "Our Prospective Clients",
         "text3": [
             {
-                "img": "../../public/images/households.webp",
+                "img": "/images/households.webp",
                 "head": "Households"
             },
             {
-                "img": "../../public/images/commercial-industries.webp",
+                "img": "/images/commercial-industries.webp",
                 "head": "Commercial Industries"
             }
         ],
         "text4-head": "Key Benefits",
         "text4": [
             {
-                "img": "../../public/images/Authorized Vehicle Scrapping Service - The Kabadiwala-6.svg",
+                "img": "/images/Authorized Vehicle Scrapping Service - The Kabadiwala-6.svg",
                 "head": "Price",
                 "text":"Best scrap rates."
             },
             {
-                "img": "../../public/images/Authorized Vehicle Scrapping Service - The Kabadiwala-7.svg",
+                "img": "/images/Authorized Vehicle Scrapping Service - The Kabadiwala-7.svg",
                 "head": "Hassle-free Service",
                 "text": " Hassle free service by the professionals."
             },
             {
-                "img": "../../public/images/Authorized Vehicle Scrapping Service - The Kabadiwala-8.svg",
+                "img": "/images/Authorized Vehicle Scrapping Service - The Kabadiwala-8.svg",
                 "head": "Safe Disposal",
                 "text": "Environment friendly disposal of your scrap."
             },
             {
-                "img": "../../public/images/Authorized Vehicle Scrapping Service - The Kabadiwala-9.svg",
+                "img": "/images/Authorized Vehicle Scrapping Service - The Kabadiwala-9.svg",
                 "head": "Compliance",
                 "text": "Following necessary compliances."
             },
             {
-                "img": "../../public/images/Authorized Vehicle Scrapping Service - The Kabadiwala-5.svg",
+                "img": "/images/Authorized Vehicle Scrapping Service - The Kabadiwala-5.svg",
                 "head": "Certification",
                 "text": "Scrappage certificate as a document of proof."
             }
@@ -374,41 +374,41 @@ export const data =  [
         "id":  5,
         "check": "zero-waste-society",
         "heading" : "Zero Waste Society",
-        "img" : "../../public/images/zero-waste-society-hero.webp",
+        "img" : "/images/zero-waste-society-hero.webp",
         "text1": "To help your society achieve Zero Waste, The Kabadiwala with its services binds the ends of the linear economy together to convert it into a circular one. Our journey towards Zero Waste starts by emphasising on the prevention of the wasteful practices from the onset of the chain, then leads to minimising the waste as much as possible, to finally recycle or rot to generate resources which can be pushed back to the economy.",
         "text2-head" : "What We Do?",
         "text2": [
-            {   "img": "../../public/images/Zero Waste Societies - The Kabadiwala-1.svg",
+            {   "img": "/images/Zero Waste Societies - The Kabadiwala-1.svg",
                 "head" :"Auditing",
                 "text": "Auditing the existing waste management system of your society to understand what changes need to be made & what infrastructural adjustments need to be acquired for the successful implementation of source segregation."
             },
             {   
-                "img": "../../public/images/Zero Waste Societies - The Kabadiwala-2.svg",
+                "img": "/images/Zero Waste Societies - The Kabadiwala-2.svg",
                 "head":"Engagement",
                 "text":" We provide you assistance with all the legal documentation requirements to initiate the EPR fulfilment process."},
             {
-                "img":"../../public/images/Zero Waste Societies - The Kabadiwala-3.svg",
+                "img":"/images/Zero Waste Societies - The Kabadiwala-3.svg",
                 "head": "Awareness",
                 "text":" Collected post-consumer waste is segregated, cleaned, baled & transported to registered recyclers."
             },
 
             {
-                "img": "../../public/images/Zero Waste Societies - The Kabadiwala-4.svg",
+                "img": "/images/Zero Waste Societies - The Kabadiwala-4.svg",
                 "head": "Training",
                 "text":"Non-recyclable plastic is sent for co-processing in cement kilns, road construction and infrastructure building."
             },
             {
-                "img": "../../public/images/Zero Waste Societies - The Kabadiwala-5.svg",
+                "img": "/images/Zero Waste Societies - The Kabadiwala-5.svg",
                 "head": "Monitoring",
                 "text":"An EPR certificate is issued along with a proof of document delivery challans, invoices and photos acknowledging the amount of plastic waste offset by you."
             },
             {
-                "img": "../../public/images/Zero Waste Societies - The Kabadiwala-6.svg",
+                "img": "/images/Zero Waste Societies - The Kabadiwala-6.svg",
                 "head": "Recycling",
                 "text":"An EPR certificate is issued along with a proof of document delivery challans, invoices and photos acknowledging the amount of plastic waste offset by you."
             },
             {
-                "img": "../../public/images/Zero Waste Societies - The Kabadiwala-7.svg",
+                "img": "/images/Zero Waste Societies - The Kabadiwala-7.svg",
                 "head": "Certification",
                 "text":"An EPR certificate is issued along with a proof of document delivery challans, invoices and photos acknowledging the amount of plastic waste offset by you."
             },
@@ -416,27 +416,27 @@ export const data =  [
         "text4-head": "Key Benefits",
         "text4": [
             {
-                "img": "../../public/images/Zero Waste Societies - The Kabadiwala-8.svg",
+                "img": "/images/Zero Waste Societies - The Kabadiwala-8.svg",
                 "head": "Specialization",
                 "text":"Get digitised solutions."
             },
             {
-                "img": "../../public/images/Zero Waste Societies - The Kabadiwala-9.svg",
+                "img": "/images/Zero Waste Societies - The Kabadiwala-9.svg",
                 "head": "Impact",
                 "text": " Fulfil social responsibility and help establish a circular economy."
             },
             {
-                "img": "../../public/images/Zero Waste Societies - The Kabadiwala-10.svg",
+                "img": "/images/Zero Waste Societies - The Kabadiwala-10.svg",
                 "head": "Zero Waste",
                 "text": " Electronic report transparency."
             },
             {
-                "img": "../../public/images/Zero Waste Societies - The Kabadiwala-11.svg",
+                "img": "/images/Zero Waste Societies - The Kabadiwala-11.svg",
                 "head": "Compliance",
                 "text": "Achieve scalability of plastic waste collection through our sizable network of waste pickers of the informal sector."
             },
             {
-                "img": "../../public/images/EPR _ Waste Management Services - The Kabadiwala-11.svg",
+                "img": "/images/EPR _ Waste Management Services - The Kabadiwala-11.svg",
                 "head": "Sustainability",
                 "text": "End-to-end traceability of your Impact."
             }

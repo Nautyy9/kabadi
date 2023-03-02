@@ -17,38 +17,15 @@ function Privacy() {
 
   const {theme} = useContext(AuthContext) as Props
 
-  const [loading, setLoading] =useState<boolean>(false);
-  useEffect(() => {
-    let unmount = false
-
-    if(!unmount){
-      setLoading(true);
-      setTimeout(() =>{
-      setLoading(false)
-  },2000)
-}
-return () => {unmount = true;} 
-  },[terms, privacy])
-
-  if(loading) {
-    return (
-      <div className={`${theme? 'bg-sun-light' : 'bg-sun-dark'} bg-sun-dark flex flex-col gap-y-20 h-screen items-center justify-center`} >
-      <SyncLoader
-        size={20}
-        color="#36d7b7"
-      />
-      </div>
-    )
-  }
   return (
     <div className={theme? 'bg-sun-light  text-sun-light h-max' : 'text-sun-dark dark-one bg-sun-darkmode h-max'}>
       <Header/>
-      <div className="h-max w-2/3 mx-auto  pt-40">
+      <div className="h-max w-11/12 sm:w-2/3 mx-auto  pt-40">
 
       {data?.map((val, ind) =>{
         if(checkPrivacyRoute === val.route || checkTermsRoute === val.route) return (
           <div key={ind} className="h-max    text-sun-dark">
-            <div className="flex justify-between border-b-2 pb-5 ">
+            <div className=" flex flex-col gap-y-5 sm:flex-row  justify-between border-b-2 pb-5 ">
               <h1 className='text-5xl font-bold mb-4'>{val.head}</h1>
               <div className={`${theme ? 'bg-gray-200':"bg-[#171717]"} flex justify-center items-center px-5 py-2 rounded-xl`}>
                 <h3>{val.date}</h3>

@@ -12,38 +12,16 @@ const dataArr =[
 ]
 
 const dataArr2 =[
-  {img:'images/About Us _ Waste Management Company - The Kabadiwala-1.svg', head: "Transparency", text:"Our App enables users to access the impact marked through the waste sold and recycled in terms of resources and energy saved."},
-  {img:'images/About Us _ Waste Management Company - The Kabadiwala-2.svg', head: "Traceability", text:"Our 4 different apps for users, pickup executives, city managers & MRF centers are helping us organize the unorganized waste sector in terms of keeping a track record of waste sold, segregated, bailed, transported, and recycled."}, 
-  {img:'images/About Us _ Waste Management Company - The Kabadiwala-3.svg', head: "Scalability", text:"Our 4 different apps for users, pickup executives, city managers & MRF centers are helping us organize the unorganized waste sector in terms of keeping a track record of waste sold, segregated, bailed, transported, and recycled."} 
+  {img:'/images/About Us _ Waste Management Company - The Kabadiwala-1.svg', head: "Transparency", text:"Our App enables users to access the impact marked through the waste sold and recycled in terms of resources and energy saved."},
+  {img:'/images/About Us _ Waste Management Company - The Kabadiwala-2.svg', head: "Traceability", text:"Our 4 different apps for users, pickup executives, city managers & MRF centers are helping us organize the unorganized waste sector in terms of keeping a track record of waste sold, segregated, bailed, transported, and recycled."}, 
+  {img:'/images/About Us _ Waste Management Company - The Kabadiwala-3.svg', head: "Scalability", text:"Our 4 different apps for users, pickup executives, city managers & MRF centers are helping us organize the unorganized waste sector in terms of keeping a track record of waste sold, segregated, bailed, transported, and recycled."} 
 ]
 
 
 function About() {
   const uid = useId()
   const {theme} = useContext(AuthContext) as Props
-  const [loading, setLoading] =useState<boolean>(false);
-  useEffect(() => {
-    let unmount = false
 
-    if(!unmount){
-      setLoading(true);
-      setTimeout(() =>{
-      setLoading(false)
-  },2000)
-}
-return () => {unmount = true;} 
-  },[])
-
-  if(loading) {
-    return (
-       <div className={`${theme? 'bg-sun-light' : 'bg-sun-dark'} bg-sun-dark flex flex-col gap-y-20 h-screen items-center justify-center`} >
-      <SyncLoader
-        size={20}
-        color="#36d7b7"
-      />
-      </div>
-    )
-  }
   return (
     <div className={theme? ' bg-sun-light text-black' : 'text-white dark-one bg-sun-darkmode'}>
       <div className="relative h-max flex flex-col">

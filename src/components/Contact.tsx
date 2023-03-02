@@ -9,6 +9,7 @@ import Confetti from 'react-confetti'
 import { useMatch, useNavigate } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
+import { SyncLoader } from 'react-spinners'
 
 function Contact() {
     const [formDetials, setFormDetials] = useState({
@@ -32,7 +33,6 @@ function Contact() {
 
     const onSubmit =   (e:  React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log('shishi');
         
         setFormDetials( (prev: any) => ({
             ...prev,
@@ -56,20 +56,45 @@ function Contact() {
                     setMsg(data.data.msg);
                 })
                 .catch((error) =>{
-                    console.log(error);
+                    alert(error);
                 })
                 
             }
             else {
-                console.log('wtf empty value!?')
             }
     }
     catch(err) {
-        console.log(controller.signal.aborted)
+        alert(controller.signal.aborted)
     }
     return () => controller.abort();
 
     },[onSubmit])
+
+
+
+    const [loading, setLoading] =useState<boolean>(false);
+    useEffect(() => {
+      let unmount = false
+  
+      if(!unmount){
+        setLoading(true);
+        setTimeout(() =>{
+        setLoading(false)
+    },2000)
+  }
+  return () => {unmount = true;} 
+    },[])
+  
+    if(loading && match) {
+      return (
+         <div className={`${theme? 'bg-sun-light' : 'bg-sun-dark'} bg-sun-dark flex flex-col gap-y-20 h-screen items-center justify-center`} >
+        <SyncLoader
+          size={20}
+          color="#36d7b7"
+        />
+        </div>
+      )
+    }
     
     if(!match) {
     if(!msg)
