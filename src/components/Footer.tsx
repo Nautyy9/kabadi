@@ -13,7 +13,7 @@ function Footer() {
   
 
   return (
-    <div className={`relative bg-sun-darkmode mt-20 footer ${(contactMatch || serviceMatch) && (theme ? " -gap-20 text-black shadow-xl -gap-20" : " text-white")}`}>
+    <div className={`relative bg-sun-darkmode pt-20 footer ${(contactMatch || serviceMatch) && (theme ? " -gap-20 text-black shadow-xl -gap-20" : " text-white")}`}>
       <div className={`${(contactMatch || serviceMatch) ? (theme ? "hidden bg-sun-light -gap-20 text-black shadow-xl -gap-20 lg:h-80 py-20  lg:grid lg:grid-flow-col lg:grid-cols-6 justify-center lg:justify-start lg:items-start" : "hidden bg-black  text-white lg:h-80 py-20  lg:grid lg:grid-flow-col lg:grid-cols-6 justify-center lg:justify-start lg:items-start ") : 'hidden lg:h-80 py-20  text-sun-dark bg-sun-light   lg:grid lg:grid-flow-col lg:grid-cols-6 justify-center lg:justify-start lg:items-start'} `}>
           <div className="flex flex-col items-center  lg:col-span-1 mt-10  col-span-1 ">
               <div className="flex flex-col gap-y-3 ">

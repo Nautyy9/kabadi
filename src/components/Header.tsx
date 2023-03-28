@@ -41,7 +41,7 @@ function Header() {
   {
   return (
 
-    <div className={`${home && (theme ? 'text-white ' : 'text-white')} ${( serviceMatch)&& (theme ?" -gap-20 text-white " : "text-white ")} ${(contactMatch)&& (theme ?"bg-sun-darkmode text-black shadow-md" : "bg-sun-darkmode text-sun-dark ")} ${(terms || privacy) && (theme ? "text-black" : "text-white")} top-0 fixed   h-20 flex-wrap w-screen  z-10  flex flex-row justify-between lg:justify-around bg-sun-darkmode `}>
+    <div className={`${home && (theme ? 'text-white ' : 'text-white')} ${( serviceMatch)&& (theme ?" -gap-20 text-white " : "text-white ")} ${(contactMatch)&& (theme ?"bg-sun-darkmode text-black shadow-md" : "bg-sun-darkmode text-sun-dark ")} ${(terms || privacy) && (theme ? "text-black" : "text-white")} top-0 fixed   h-20 flex-wrap w-screen  z-10  flex flex-row justify-between lg:justify-around  `}>
         <div className=" text-xl flex items-center font-semibold ">
           <Link to='/'><img src={logo} className=' h-14 mt-1  rounded-full' alt='Kabadi Logo'/></Link>
         </div>
@@ -66,7 +66,7 @@ function Header() {
     
     
     return (
-      <div className={` ${(contactMatch || serviceMatch ||terms || privacy)&& (theme ?" -gap-20 text-black shadow-xl " : " text-white ")} top-0 lg:hidden shadow-md fixed  sm:h-60  gap-y-6 w-screen z-10 grid grid-flow-row bg-sun-darkmode text-sun-dark`} >
+      <div className={` ${(contactMatch || serviceMatch ||terms || privacy)&& (theme ?" -gap-20 text-black shadow-xl " : " text-white ")} top-0 lg:hidden shadow-md fixed  sm:h-60  gap-y-6 w-screen z-10 grid grid-flow-row  text-sun-dark`} >
         <div className=" grid grid-flow-col  justify-between    mt-8 ">
         <Link to='/'><img src={logo} className='  h-14 mt-1 ml-5   rounded-full' alt='Kabadi Logo'/></Link>
           <Dropdown3 show={show} setShow={setShow}/>   
