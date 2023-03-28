@@ -8,9 +8,9 @@ function Section1() {
     <div className=' relative   flex flex-row justify-center items-center'>
       <video autoPlay loop muted  src={scrapvid} className=" video w-full filter brightness-50">
       </video>
-      <div className=" flex flex-col justify-center items-center absolute">
+      <div className="w-11/12 flex flex-col justify-center items-center absolute">
 
-<h1 className=' text-8xl font-medium sm:font-extrabold '>
+<h1 className=' text-7xl  xs:text-8xl font-medium sm:font-extrabold '>
       Got <span className='suii'>Scrap</span> <br/>Sell it to Us
   </h1> 
   <p className=' text-2xl sm:w-11/12 lg:w-3/4 mt-4'>Sell us your recyclable wastes and help contribute to the circular economy.</p>

@@ -1,6 +1,7 @@
 import { Menu, Transition } from '@headlessui/react'
 import { Fragment, useEffect, useRef, useState } from 'react'
 import {BiChevronDown} from 'react-icons/bi'
+import { Link } from 'react-router-dom'
 
 
 type CheckClass = {
@@ -10,7 +11,7 @@ type CheckClass = {
 export default function Dropdown2() {
   return (
     
-      <Menu as="div" className="relative block text-left">
+      <Menu as="div" className="relative block text-left  ">
         <div>
           <Menu.Button className="inline-flex transition duration-300 w-full justify-center rounded-md  text-md font-medium   hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
             Service
@@ -29,44 +30,35 @@ export default function Dropdown2() {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className=" absolute top-0  -left-9 sm+:-left-12 lg:left-[50%]  lg:translate-x-[-35%]  mt-11 lg:mt-16  border-sun-dark border-y-2 lg:border-2  lg:shadow-sm shadow-sun-dark w-screen lg:w-[800px] lg-md:w-[1000px]  service-break:h-[300px]   lg:rounded-md text-sun-light bg-sun-light  ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <Menu.Items className=" shadow-lg absolute top-0  -left-6 sm+:-left-12 lg:left-[50%]  lg:translate-x-[-35%]  mt-11 lg:mt-16  border-sun-dark border-y-2 lg:border-2  lg:shadow-sm shadow-sun-dark w-screen lg:w-[800px] lg-md:w-[1000px]  service-break:h-[300px]   lg:rounded-md text-sun-light bg-sun-light  ring-1 ring-black ring-opacity-5 focus:outline-none">
             <div className="px-1 py-1 service-break:flex justify-around m-5">
               <div className="flex flex-col">
                 <Menu.Item>
                   {() => (
-                    <button
+                    <h3
                     className={`border-b-2 border-[#19a419] text-lg text-[#19a419] group flex w-full items-center  px-2 py-2 `}
                     >
                       For Individuals
-                    </button>
+                    </h3>
                   )}
                 </Menu.Item>
                 <div className="  flex sm:flex-col items-center justify-center gap-y-2  mt-5 ">
                   <Menu.Item>
                     {({active}) => (
-                      <button
+                      <Link to="/services/vehicle-scrapping" 
                       className={` ${active ? 'text-base text-[#19a419] group flex w-full items-center rounded-md px-2 py-2' : 'text-base text-sun-dark group flex w-full items-center rounded-md px-2 py-2 '}`}
                       >
-                        Scrap COl
-                      </button>
+                        Vehicle Scrapping
+                      </Link>
                     )}
                   </Menu.Item>
                   <Menu.Item>
                     {({active}) => (
-                      <button
+                      <Link to="/services/zero-waste-society"
                       className={` ${active ? 'text-base text-[#19a419] group flex w-full items-center rounded-md px-2 py-2' : 'text-base text-sun-dark group flex w-full items-center rounded-md px-2 py-2 '}`}
                       >
-                        For Individuals
-                      </button>
-                    )}
-                  </Menu.Item>
-                  <Menu.Item>
-                    {({active}) => (
-                      <button
-                      className={` ${active ? 'text-base text-[#19a419] group flex w-full items-center rounded-md px-2 py-2' : 'text-base text-sun-dark group flex w-full items-center rounded-md px-2 py-2 '}`}
-                      >
-                        For Individuals
-                      </button>
+                        Zero Waste Society
+                      </Link>
                     )}
                   </Menu.Item>
                 </div>
@@ -75,98 +67,98 @@ export default function Dropdown2() {
               <div className="flex flex-col">
                 <Menu.Item>
                   {() => (
-                    <button
+                    <h3
                     className={`border-b-2 border-[#19a419] text-lg text-[#19a419] group flex w-full items-center  px-2 py-2 `}
                     >
-                      For Individuals
-                    </button>
+                      For Businesses
+                    </h3>
                   )}
                 </Menu.Item>
                 <div className="flex flex-wrap  justify-between mr-10 service-break:justify-start service-break:mx-0 service-break:gap-x-3">
                   <div className="flex xxs+:flex-col items-center justify-center gap-y-2  mt-5">
                     <Menu.Item>
                       {({active}) => (
-                        <button
+                        <Link to='/services/epr'
                         className={` ${active ? 'text-base text-[#19a419] group flex w-full items-center rounded-md px-2 py-2' : 'text-base text-sun-dark group flex w-full items-center rounded-md px-2 py-2 '}`}
                         >
-                          Scrap COl
-                        </button>
+                          EPR
+                        </Link>
                       )}
                     </Menu.Item>
                     <Menu.Item>
                       {({active}) => (
-                        <button
+                        <Link to="/services/circular-economy"
                         className={` ${active ? 'text-base text-[#19a419] group flex w-full items-center rounded-md px-2 py-2' : 'text-base text-sun-dark group flex w-full items-center rounded-md px-2 py-2 '}`}
                         >
-                          For Individuals
-                        </button>
+                          Circular Economy
+                        </Link>
                       )}
                     </Menu.Item>
                     <Menu.Item>
                       {({active}) => (
-                        <button
+                        <Link to= '/services/shredding-service'
                         className={` ${active ? 'text-base text-[#19a419] group flex w-full items-center rounded-md px-2 py-2' : 'text-base text-sun-dark group flex w-full items-center rounded-md px-2 py-2 '}`}
                         >
-                          For Individuals
-                        </button>
+                          Paper Shredding
+                        </Link>
                       )}
                     </Menu.Item>
                   </div>
                   <div className="flex xxs+:flex-col items-center justify-center gap-y-2  mt-5">
                   <Menu.Item>
                     {({active}) => (
-                      <button
+                      <Link to="/services/vehicle-scrapping"
                       className={` ${active ? 'text-base text-[#19a419] group flex w-full items-center rounded-md px-2 py-2' : 'text-base text-sun-dark group flex w-full items-center rounded-md px-2 py-2 '}`}
                       >
-                        Scrap COl
-                      </button>
+                        Vehicle Scrapping
+                      </Link>
                     )}
                   </Menu.Item>
                   <Menu.Item>
                     {({active}) => (
-                      <button
+                      <Link to='/services/zero-waste-society'
                       className={` ${active ? 'text-base text-[#19a419] group flex w-full items-center rounded-md px-2 py-2' : 'text-base text-sun-dark group flex w-full items-center rounded-md px-2 py-2 '}`}
                       >
-                        For Individuals
-                      </button>
+                        Zero Waste 
+                      </Link>
                     )}
                   </Menu.Item>
                   <Menu.Item>
                     {({active}) => (
-                      <button
+                      <Link to=""
                       className={` ${active ? 'text-base text-[#19a419] group flex w-full items-center rounded-md px-2 py-2' : 'text-base text-sun-dark group flex w-full items-center rounded-md px-2 py-2 '}`}
                       >
-                        For Individuals
-                      </button>
+                        {/* For Individuals */}
+                      </Link>
                     )}
                   </Menu.Item>
                 </div>
                 <div className="  flex xxs+:flex-col items-center justify-center gap-y-2  mt-5">
                   <Menu.Item>
                     {({active}) => (
-                      <button
+                      <Link to=""
                       className={` ${active ? 'text-base text-[#19a419] group flex w-full items-center rounded-md px-2 py-2' : 'text-base text-sun-dark group flex w-full items-center rounded-md px-2 py-2 '}`}
                       >
-                        Scrap COl
-                      </button>
+                        {/* Scrap COl */}
+                      </Link>
                     )}
                   </Menu.Item>
                   <Menu.Item>
                     {({active}) => (
-                      <button
+                      <Link to=""
                       className={` ${active ? 'text-base text-[#19a419] group flex w-full items-center rounded-md px-2 py-2' : 'text-base text-sun-dark group flex w-full items-center rounded-md px-2 py-2 '}`}
                       >
-                        For Individuals
-                      </button>
+                        {/* For Individuals */}
+                      </Link>
                     )}
                   </Menu.Item>
                   <Menu.Item>
                     {({active}) => (
-                      <button
+                      <Link to=""
                       className={` ${active ? 'text-base text-[#19a419] group flex w-full items-center rounded-md px-2 py-2' : 'text-base text-sun-dark group flex w-full items-center rounded-md px-2 py-2 '}`}
                       >
-                        For Individuals
-                      </button>
+                        {/* For Individuals */}
+                      </Link>
                     )}
                   </Menu.Item>
                 </div>
@@ -175,39 +167,39 @@ export default function Dropdown2() {
               <div className="flex flex-col">
                 <Menu.Item>
                   {() => (
-                    <button
+                    <h3
                     className={`border-b-2 border-[#19a419] text-lg text-[#19a419] group flex w-full items-center  px-2 py-2 `}
                     >
-                      For Individuals
-                    </button>
+                      For Governments
+                    </h3>
                   )}
                 </Menu.Item>
                 <div className="flex sm:flex-col items-center justify-center gap-y-2  mt-5">
                   <Menu.Item>
                     {({active}) => (
-                      <button
+                      <Link to=""
                       className={` ${active ? 'text-base text-[#19a419] group flex w-full items-center rounded-md px-2 py-2' : 'text-base text-sun-dark group flex w-full items-center rounded-md px-2 py-2 '}`}
                       >
-                        Scrap COl
-                      </button>
+                        {/* Scrap COl */}
+                      </Link>
                     )}
                   </Menu.Item>
                   <Menu.Item>
                     {({active}) => (
-                      <button
+                      <Link to=""
                       className={` ${active ? 'text-base text-[#19a419] group flex w-full items-center rounded-md px-2 py-2' : 'text-base text-sun-dark group flex w-full items-center rounded-md px-2 py-2 '}`}
                       >
-                        For Individuals
-                      </button>
+                        {/* For Individuals */}
+                      </Link>
                     )}
                   </Menu.Item>
                   <Menu.Item>
                     {({active}) => (
-                      <button
+                      <Link to=""
                       className={` ${active ? 'text-base text-[#19a419] group flex w-full items-center rounded-md px-2 py-2' : 'text-base text-sun-dark group flex w-full items-center rounded-md px-2 py-2 '}`}
                       >
-                        For Individuals
-                      </button>
+                        {/* For Individuals */}
+                      </Link>
                     )}
                   </Menu.Item>
                 </div>

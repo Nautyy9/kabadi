@@ -115,7 +115,7 @@ function Contact() {
                     <p className=' text-xl mt-10 font-semibold flex  lg:gap-x-6  items-center'><GoLocation className='w-8 h-8'></GoLocation>3rd Floor, Jyoti Cineplex Zone-1, Maharana Pratap Nagar, Bhopal, Madhya Pradesh - 462023</p>
                 </div>
             </div>
-            <div className={`w-full rounded-l-xl lg:rounded-l-none rounded-r-xl pt-10 ${theme ? 'bg-[#fafafa]' : 'bg-gray-dark'}`}>
+            <div className={`w-full rounded-l-xl lg:rounded-l-none rounded-r-xl pt-10 bg-sun-darkmode`}>
                 <form onSubmit={(e) =>{onSubmit(e)}}>
                     <div className="flex flex-col  w-5/6 mx-auto gap-2">
                         <label htmlFor='name' className='text-gray-text' >Name</label>
@@ -148,7 +148,7 @@ function Contact() {
   )
   else {
     return (
-      <div className="w-full = relative mt-20">
+      <div className="w-full  relative mt-20">
 
         <div className=" flex container h-lg+  w-11/12 lg+:w-2/3 mx-auto rounded-xl">
         <Confetti gravity={0.04} className='w-11/12 rounded-xl mx-auto h-full'>

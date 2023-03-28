@@ -13,7 +13,7 @@ function Footer() {
   
 
   return (
-    <div className={`relative bg-sun-darkmode pt-20  footer ${(contactMatch || serviceMatch) && (theme ? "bg-sun-light -gap-20 text-black shadow-xl -gap-20" : "bg-sun-dark text-white")}`}>
+    <div className={`relative bg-sun-darkmode mt-20 footer ${(contactMatch || serviceMatch) && (theme ? " -gap-20 text-black shadow-xl -gap-20" : " text-white")}`}>
       <div className={`${(contactMatch || serviceMatch) ? (theme ? "hidden bg-sun-light -gap-20 text-black shadow-xl -gap-20 lg:h-80 py-20  lg:grid lg:grid-flow-col lg:grid-cols-6 justify-center lg:justify-start lg:items-start" : "hidden bg-black  text-white lg:h-80 py-20  lg:grid lg:grid-flow-col lg:grid-cols-6 justify-center lg:justify-start lg:items-start ") : 'hidden lg:h-80 py-20  text-sun-dark bg-sun-light   lg:grid lg:grid-flow-col lg:grid-cols-6 justify-center lg:justify-start lg:items-start'} `}>
           <div className="flex flex-col items-center  lg:col-span-1 mt-10  col-span-1 ">
               <div className="flex flex-col gap-y-3 ">
@@ -51,7 +51,7 @@ function Footer() {
               <div className="flex  gap-y-4 lg:gap-x-4">
                 <a href="/">
                   <div className="flex gap-x-2">
-                  <img src="images/logo.svg" className='h-10 w-10' alt="KabadiLogo" />
+                  <img src="/images/logo.svg" className='h-10 w-10' alt="KabadiLogo" />
                   <p className='text-center m-auto text-2xl font-bold border-b-4 pb-0.5 border-green-exact text-green-exact'>KABADI</p> 
                   </div>
                 </a>
@@ -110,7 +110,7 @@ function Footer() {
               <div className="flex flex-col gap-y-4 lg:gap-x-8">
                 <a href="/">
                   <div className="flex gap-x-2">
-                  <img src="images/logo.svg" className='h-10 w-10' alt="KabadiLogo" />
+                  <img src="/images/logo.svg" className='h-10 w-10' alt="KabadiLogo" />
                   <p className='text-center m-auto text-2xl font-bold border-b-4 pb-0.5 border-green-exact text-green-exact'>KABADI</p> 
                   </div>
                 </a>

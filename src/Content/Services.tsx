@@ -25,12 +25,12 @@ const {theme} = useContext(AuthContext) as Props
                   <div className=' relative flex flex-col ' key={val.id}>
                     <div className="relative">
 
-                      <img src={val.img} alt="Erp-Head" className='h-80 w-screen'/>
+                      <img src={val.img} alt="Erp-Head" className='h-80 w-full'/>
                       <h1 className={ `text-4xl  xl:text-5xl xxl:text-6xl absolute w-4/5 left-10 md:left-20 md:ml-4  lg:w-1/2 lg:left-20 lg+:left-36  xxl:left-44 3xl:left-56     bottom-4 font-bold text-white`}>{val.heading}</h1>
                     </div>
                     
                     <div className="flex lg:w-11/12  ">
-                      <div className="flex flex-col gap-y-20 w-4/5 lg:w-1/2  mx-auto mt-20 ">
+                      <div className="flex flex-col justify-center items-center gap-y-20 w-4/5 lg:w-1/2  mx-auto mt-20 ">
                         <div className={`text-lg ${theme ? 'text-black' : 'text-white'}`}>
                           <p>{val.text1}</p>
                         </div>
@@ -76,13 +76,13 @@ const {theme} = useContext(AuthContext) as Props
                             )
                             })} 
                         </div>
-                        <div className={`text-lg  w-screen flex-wrap ${theme ? 'text-black' : 'text-white'}`}>
+                        <div className={`text-lg  flex-wrap ${theme ? 'text-black' : 'text-white'}`}>
                           <h3 className={`w-5/6 text-4xl  ${theme ? 'text-black' : 'text-white'}`}>{val['text5-head']}</h3>
-                          <div className="w-5/6 flex flex-wrap mt-10 ">
+                          <div className="w-5/6 flex flex-wrap mt-10 m-auto xs:m-0 xs:mt-10 ">
 
                           {val.text5.map((inval, ind) => {
                             return (
-                              <div key={ind} className='flex flex-wrap mb-10 md:mr-10  '>
+                              <div key={ind} className='flex justify-center flex-wrap mb-10 md:mr-10  '>
                                 <div className={` md:w-60 md:h-[350px] min-h-max  rounded-xl ${ theme? 'bg-gray-light' : 'bg-gray-dark'}`}>
                                   <h3 className='text-2xl ml-6 mt-6 font-sans' >{inval?.head}</h3>
                                   <p className='text-lg ml-6 my-4 w-5/6 font-sans'>{inval?.text}</p>
